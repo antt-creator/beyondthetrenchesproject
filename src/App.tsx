@@ -34,7 +34,7 @@ export default function App() {
             <BookOpen className="w-6 h-6 text-olive" />
             <span className="font-serif font-bold text-xl tracking-tight">{BOOK_INFO.publisher.toUpperCase()}</span>
           </div>
-                                </div>
+          
         </div>
       </nav>
 
