@@ -79,7 +79,7 @@ export default function OrderForm({ countryCode, onSuccess }: OrderFormProps) {
             notes: data.notes || null
           }
         ])
-        .select();
+        
 
       if (error) throw error;
       

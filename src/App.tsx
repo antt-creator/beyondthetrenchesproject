@@ -292,3 +292,27 @@ export default function App() {
     </div>
   );
 }
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import AdminDashboard from './components/AdminDashboard'; // လမ်းကြောင်း မှန်ပါစေ
+import Login from './Login'; // Login.tsx ရှိတဲ့နေရာ
+
+// ... ကျန်တဲ့ Code များ ...
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        {/* မူလ Landing Page (Shop) */}
+        <Route path="/" element={<LandingPage />} /> 
+
+        {/* Admin နဲ့ Login လမ်းကြောင်းများ */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/admin" element={<AdminDashboard />} />
+        
+        {/* 404 ဖြစ်ရင် Home ကို ပြန်ပို့ချင်ရင် */}
+        <Route path="*" element={<LandingPage />} />
+      </Routes>
+    </Router>
+  );
+}
