@@ -34,20 +34,7 @@ export default function App() {
             <BookOpen className="w-6 h-6 text-olive" />
             <span className="font-serif font-bold text-xl tracking-tight">{BOOK_INFO.publisher.toUpperCase()}</span>
           </div>
-          <div className="flex gap-6">
-            <button 
-              onClick={() => setActiveTab('shop')}
-              className={`text-sm font-medium transition-colors ${activeTab === 'shop' ? 'text-olive' : 'text-black/40 hover:text-black'}`}
-            >
-              The Book
-            </button>
-            <button 
-              onClick={() => setActiveTab('admin')}
-              className={`text-sm font-medium transition-colors ${activeTab === 'admin' ? 'text-olive' : 'text-black/40 hover:text-black'}`}
-            >
-              Admin
-            </button>
-          </div>
+                                </div>
         </div>
       </nav>
 
